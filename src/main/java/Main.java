@@ -1,9 +1,12 @@
 /**
  * Created by sachin on 5/12/16.
  */
+
+
 import com.neovisionaries.ws.client.WebSocketException;
 import com.neovisionaries.ws.client.WebSocketFrame;
 import io.github.sac.BasicListener;
+import io.github.sac.Emitter;
 import io.github.sac.Socket;
 
 import java.util.List;
@@ -44,6 +47,15 @@ public class Main {
         });
 
         socket.connect();
+
+        socket.emit("chat","Hi");
+
+        socket.on("yell", new Emitter.Listener() {
+            @Override
+            public void call(String name, Object data) {
+                System.out.println("Got data from "+ name +" data is "+data);
+            }
+        });
 
     }
 }
