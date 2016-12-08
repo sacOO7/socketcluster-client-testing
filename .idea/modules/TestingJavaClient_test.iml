@@ -10,10 +10,10 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="TestingJavaClient_main" />
-    <orderEntry type="library" name="Gradle: io.github.sac:SocketclusterClientJava:1.6" level="project" />
+    <orderEntry type="library" name="Gradle: io.github.sac:SocketclusterClientJava:1.7.1" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.11" level="project" />
     <orderEntry type="library" name="Gradle: com.neovisionaries:nv-websocket-client:1.30" level="project" />
-    <orderEntry type="library" name="Gradle: com.googlecode.json-simple:json-simple:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.json:json:20090211" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="TestingJavaClient_main" />
