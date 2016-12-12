@@ -59,12 +59,13 @@ public class Channel {
         socket.disableLogging();
 
 
-        socket.getChannelByName("room").onMessage(new Emitter.Listener() {
-            @Override
-            public void call(String name, Object data) {
+//        socket.getChannelByName("room").onMessage(new Emitter.Listener() {
+//            @Override
+//            public void call(String name, Object data) {
+//
+//            }
+//        });
 
-            }
-        });
         socket.onSubscribe("room", new Emitter.Listener() {
             @Override
             public void call(String name, Object data) {
